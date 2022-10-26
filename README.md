@@ -2,9 +2,9 @@
 ## Summary
 1. Get started in the Cosmos ecosystem
    - Create your wallet
-     - Using Keplr
-     - Using Cosmostation
-     - Using Ledger
+     - [Using Keplr](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/Keplr)
+     - [Using Cosmostation](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/Cosmostation)
+     - [Using Ledger](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/Ledger)
 2. Get your first Cosmos native coins
    - Buy with a fiat onramp solution
      - Using Kado 
