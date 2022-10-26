@@ -20,7 +20,11 @@
      - [Using WhiteBIT](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/WhiteBIT)
 
 3. StakeLab as a Hub
-   - Delegating your Cosmos native coins with our Validators
+   - Delegate your Cosmos native coins with our Validators
      - Using Keplr 
      - Using Cosmostation
      - Using Ledger
+     - Using CLI (Command Line Interface)
+   - Find our developing tools
+     - [Auto compound using Ledger and CLI (Command Line Interface)](https://github.com/StakeLab-Hub/Ledger_Authz_CLI)
+     - [Our relayers for the Cosmos ecosystem](https://github.com/StakeLab-Hub/Relayers)
