@@ -12,7 +12,7 @@
    - Buy with a CEX (centralized exchange)
      - [Using Binance](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/Binance)
      - [Using Coinbase](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/Coinbase)
-     - [Using Crypto.com](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/Crypto-com)
+     - [Using Crypto.com](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/Crypto.com)
      - [Using FTX](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/FTX)
      - [Using Kraken](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/Kraken)
      - [Using MEXC](https://github.com/StakeLab-Hub/Documentation/tree/main/CEX/MEXC)
