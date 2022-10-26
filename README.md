@@ -15,7 +15,7 @@
      - Using Crypto.com
      - Using FTX
      - Using Kraken
-     - Using Mexc
+     - Using MEXC
      - Using OKX
      - Using WhiteBIT
 
