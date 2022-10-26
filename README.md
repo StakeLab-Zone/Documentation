@@ -5,7 +5,6 @@
      - Using Keplr
      - Using Cosmostation
      - Using Ledger
-     - 
 2. Get your first Cosmos native coins
    - Buy with a fiat onramp solution
      - Using Kado 
