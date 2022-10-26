@@ -1,2 +1,12 @@
 # Documentation
-Newcomers? Lost between all the repositories? In the StakeLab documentation, start your Cosmos journey and get to know more about StakeLab.
+## Summary
+1. Get started in the Cosmos ecosystem
+   - Create your wallet
+     - Using Keplr
+     - Using Cosmostation
+     - Using Ledger
+2. StakeLab as a Hub
+   - Delegating your Cosmos native coins with our Validators
+     - All chains 
+     - Using Cosmostation
+     - Using Ledger
