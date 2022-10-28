@@ -2,6 +2,7 @@
 
 [Kado](https://www.kado.money/) is an onramp solution that allow you to buy a large selection of assets in few minutes and bring them on your account without passing by a Centralized Exchange. It's self custody focus, so you directly own your assets on your account associated to your private key. It's time to unbank ourself!  
 
+## Summary  
 1. How to setup an account
   - [Create your account](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Create-your-account)
   - [Confirm your email address](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Confirm-your-email-address)
