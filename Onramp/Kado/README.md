@@ -5,8 +5,9 @@ Kado is an onramp solution that allow you to buy a large selection of assets in 
 1. How to setup an account
   - [Create your account](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Create-your-account)
   - [Confirm your email address](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Confirm-your-email-address)
-  - 
+  - [Proceed the KYC process](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Proceed-the-KYC-process)
 
+2. Make your first Buy transaction
 
 
 
@@ -25,8 +26,14 @@ First of all, you need to register on [Kado](https://app.kado.money/signup).
 ### Confirm your email address  
 
 You should now have received an email on your associated account with a verification code to access your account.  
-Check your email received from mail@kado.money and copy the code on the new screen generated after the sign up.  
-You can now click on "Continue".  
+- Check your email received from mail@kado.money.
+- Copy the code on the new screen generated after the sign up.  
+- You can now click on "Continue".  
 
 ![image](https://user-images.githubusercontent.com/51711900/198527461-7e7a7ef5-aa32-47bf-93b5-cd07683c67e0.png)
 
+### Proceed the KYC process  
+
+On the top right of the new screen after proceeding your email confirmation, you should see a little screen asking you a KYC Verification to unlock all Kado products and features.  
+
+![image](https://user-images.githubusercontent.com/51711900/198529537-33356d35-1bbe-4cc6-b0b6-f256f5809389.png)
