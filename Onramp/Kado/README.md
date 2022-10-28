@@ -45,5 +45,3 @@ You will then have have access to the full "__PRIME TRUST USER AGREEMENT__" that
 ![image](https://user-images.githubusercontent.com/51711900/198530658-8fd1eb3c-aec5-4c52-a351-db518f1545dd.png)  
 
 
-![image](https://user-images.githubusercontent.com/51711900/198532917-d433940c-235b-4b13-ae97-2c63868932bb.png)
-
