@@ -11,11 +11,13 @@ Kado is an onramp solution that allow you to buy a large selection of assets in 
 
 
 
-
+## How to setup an account
 ### Create your account
 
 First of all, you need to register on [Kado](https://app.kado.money/signup).  
 - Enter first the email of your choice that will be linked to your account.  
 - Secondly, choice a secure password that you will remember (you can help yourself using extension like Dashlane or 1password)  
+- Accept the Privacy Policy and Terms of Service  
+- Click on "Sign Up" when you have confirmed the last points!  
 
 ![image](https://user-images.githubusercontent.com/51711900/198523883-00cbfa26-6c16-4c0c-b9bc-017493533607.png)
