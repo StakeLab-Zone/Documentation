@@ -27,4 +27,5 @@
      - Using CLI (Command Line Interface)
    - Find our developing tools
      - [Auto compound using Ledger and CLI (Command Line Interface)](https://github.com/StakeLab-Hub/Ledger_Authz_CLI)
-     - [Our relayers for the Cosmos ecosystem](https://github.com/StakeLab-Hub/Relayers)
+     - [Our relayers channels and wallets for the Cosmos ecosystem](https://github.com/StakeLab-Hub/Relayers)
+     - [Our restake wallets for the Cosmos ecosystem](https://github.com/StakeLab-Hub/Restake)
