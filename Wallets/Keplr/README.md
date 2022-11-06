@@ -1,6 +1,6 @@
 # Keplr
 
-[Kado](https://www.keplr.app/) is the first wallet for the interchain that allow you to make basic and advanced usage of Cosmos ecosystem (send, receive, delegate, vote, ibc transfers...). They have a dedicated desktop extension, a desktop dashboard and a mobile application. 
+[Keplr](https://www.keplr.app/) is the first wallet for the interchain that allow you to make basic and advanced usage of Cosmos ecosystem (send, receive, delegate, vote, ibc transfers...). They have a dedicated desktop extension, a desktop dashboard and a mobile application. 
 
 ## Summary  
 1. How to setup an account
