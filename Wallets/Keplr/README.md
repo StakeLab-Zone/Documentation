@@ -4,8 +4,8 @@
 
 ## Summary  
 1. How to setup an account
-  - [Create your account (without Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account)
-  - [Crate your account (with Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Ledger/README.md#Create-your-account-(Keplr))
+  - [Create your account (without Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account-(without-Ledger))
+  - [Crate your account (with Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account-(with-Ledger))
 
 2. Receive your first assets
   - [Using Kado](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md)
