@@ -8,14 +8,13 @@
   - [Confirm your email address](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Confirm-your-email-address)
   - [Proceed the KYC process](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Proceed-the-KYC-process)
 
-2. Make your first Buy transaction
-
-
-
+2. Use the Kado application  
+  - [Connect your wallet(s)](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Connect-your-wallets)  
+  - [Buy an asset with your local fiat currency](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Buy-an-asset-with-your-local-fiat-currency)  
+  - [Sell an asset to your local fiat currency](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md#Sell-an-asset-to-your-local-fiat-currency)  
 
 ## How to setup an account  
 ### Create your account  
-
 First of all, you need to __register__ on [Kado](https://app.kado.money/signup).  
 - Enter the __email__ of your choice that will be linked to your account.  
 - Choice a __secure password__ that you will remember (you can help yourself using password manager extension like [Dashlane](https://www.dashlane.com/) or [1password](https://1password.com/)).  
@@ -25,7 +24,6 @@ First of all, you need to __register__ on [Kado](https://app.kado.money/signup).
 ![image](https://user-images.githubusercontent.com/51711900/198523883-00cbfa26-6c16-4c0c-b9bc-017493533607.png)  
 
 ### Confirm your email address  
-
 You should now have received an __email__ on your associated account with a __verification code__ to access your account.  
 - Check your __email__ received from mail@kado.money.
 - Copy the __code__ on the new screen generated after the sign up.  
@@ -34,7 +32,6 @@ You should now have received an __email__ on your associated account with a __ve
 ![image](https://user-images.githubusercontent.com/51711900/198527461-7e7a7ef5-aa32-47bf-93b5-cd07683c67e0.png)  
 
 ### Proceed the KYC process  
-
 On the __top right__ of the new screen after proceeding your email confirmation, you should see a little screen asking you for a __KYC Verification__ to unlock all Kado products and features. Let's go for it? Click on the "__KYC verification__" link in blue to start the processs.    
 
 ![image](https://user-images.githubusercontent.com/51711900/198529537-33356d35-1bbe-4cc6-b0b6-f256f5809389.png)  
@@ -62,7 +59,18 @@ Click on "__Submit__" when you are done!
 
 We are close to it!  
 You will now need to choose which official document you will use to confirm your identity, **please remember to take the one associated with the provided address in the last step.**  
-Click on "__Submit__" when ready to upload them and follow the next screens to upload front & back of your official identity paper asked, and prepare a classic proof bill to confirm your actual address (even if the same as the identity one).  
+Click on "__Submit__" when ready and follow the next screens to __upload__ front & back of your __official identity__ docuemnt asked. Also prepare a classic __proof for your actual address__ to confirm it (even if the same as the identity one).  
 
 ![image](https://user-images.githubusercontent.com/51711900/200196655-a0c33327-d8ea-452d-bd00-d06a152de14d.png)
 
+Congratulations! Now Kado will review your submission and will get back to you by email to confirm or not your KYC registration!  
+It can takes to 2/3 days so just wait for their email in your box.  
+
+## Use the Kado application  
+### Connect your wallet(s)  
+
+
+### Buy an asset with your local fiat currency  
+
+
+### Sell an asset to your local fiat currency  
