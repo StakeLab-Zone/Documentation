@@ -44,4 +44,25 @@ You will then have have access to the full "__PRIME TRUST USER AGREEMENT__" that
 
 ![image](https://user-images.githubusercontent.com/51711900/198530658-8fd1eb3c-aec5-4c52-a351-db518f1545dd.png)  
 
+You should now see the __personnal informations__ required for the __KYC__:  
+- First & Last Name (+ Middle name if any).  
+- Phone number with your country prefix.  
+- Date of birth.  
+- Your personnal tax ID (depending of your nationality, please check the information popup in grey next to it to have the good one).  
+- You can now click on "__Submit__".  
+
+![image](https://user-images.githubusercontent.com/51711900/200195951-9622084b-5efb-4a44-b8f9-aceb56f00d87.png)  
+
+We are not done yet!  
+A new page should ask you to confirm the address mentionned on the official document that you will use right after to confirm your identity.  
+**It's important to note that if the official paper (*example: your ID card*) have your old address, you are still required to put this one at this step. There will be the possibility to provide a proof at the next step if you changed address since.**  
+Click on "__Submit__" when you are done!  
+
+![image](https://user-images.githubusercontent.com/51711900/200196289-43694061-7b6f-4966-bcf8-397cc41abfed.png)  
+
+We are close to it!  
+You will now need to choose which official document you will use to confirm your identity, **please remember to take the one associated with the provided address in the last step.**  
+Click on "__Submit__" when ready to upload them and follow the next screens to upload front & back of your official identity paper asked, and prepare a classic proof bill to confirm your actual address (even if the same as the identity one).  
+
+![image](https://user-images.githubusercontent.com/51711900/200196655-a0c33327-d8ea-452d-bd00-d06a152de14d.png)
 
