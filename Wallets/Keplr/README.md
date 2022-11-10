@@ -1,6 +1,7 @@
 # Keplr
 
-[Keplr](https://www.keplr.app/) is the first wallet for the interchain that allow you to make basic and advanced usage of Cosmos ecosystem (send, receive, delegate, vote, ibc transfers...). They have a dedicated desktop extension, a desktop dashboard and a mobile application. 
+[Keplr](https://www.keplr.app/) is the first wallet for the interchain that allow you to make basic and advanced usage of Cosmos ecosystem (send, receive, delegate, vote, ibc transfers...). They have a dedicated desktop extension, a desktop dashboard and a mobile application.  
+On this complete documentation, you will retrieve all of them in a one page!  
 
 ## Summary  
 1. How to setup an account (Desktop)
@@ -59,6 +60,7 @@ Click first on "__Create new account__" to start the process.
 ### Delegate an asset  
 
 ### Participate in governance  
+
 
 ## Advanced features  
 ### Make an IBC transfer  
