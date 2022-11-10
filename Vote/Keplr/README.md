@@ -18,12 +18,12 @@ On this page, we gonna learn how to vote using either the desktop dashboard or t
 ## How to vote with Keplr (Desktop)  
 ### Install the extension (Desktop)
 
-If you already have the extension installed, you can either [create your account]() or directly go to the [voting step]().  
+If you already have the extension installed, you can either [create your account](https://github.com/StakeLab-Hub/Documentation/blob/main/Vote/Keplr/README.md#Create-or-connect-your-account-desktop) or directly go to the [voting step](https://github.com/StakeLab-Hub/Documentation/blob/main/Vote/Keplr/README.md#Vote-with-Keplr-desktop).  
 You can install the extension if you don't have it following our documentation [here](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Install-Keplr).  
 
 ### Create or connect your account (Desktop)
 
-If you already have everything setup, you can directly go to the [voting step]().  
+If you already have everything setup, you can directly go to the [voting step](https://github.com/StakeLab-Hub/Documentation/blob/main/Vote/Keplr/README.md#Vote-with-Keplr-desktop).  
 You can create your account if you don't have one following our documentation:  
 - [Create an account without Ledger](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account-Desktop-without-Ledger).  
 **Remember that this solution is less secure than using a cold wallet like Ledger, play at your own risks.**  
