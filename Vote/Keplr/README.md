@@ -33,7 +33,7 @@ You can create your account if you don't have one following our documentation:
 
 Head to the specific tab in the Keplr desktop dashboard: [Active proposals](https://wallet.keplr.app/?tab=active-proposals).  
 You will here be able to vote for all the chains supported natively by the Keplr team.  
-If the blockchain you follow doesn't appears on it, you can head to [Ping Pub](https://ping.pub/) that support open sourcely all Cosmos blockchains, and directy go the steps [here (TBD)]()
+*If the blockchain you follow doesn't appears on it, you can head to [Ping Pub](https://ping.pub/) that support open sourcely all Cosmos blockchains, and direcly go the steps [here (TBD)](https://github.com/StakeLab-Hub/Documentation/blob/main/Vote/Keplr/README.md#Vote-on-Ping-Pub-with-Keplr-Desktop).*
 
 ### Vote on Ping Pub with Keplr (Desktop)
 
