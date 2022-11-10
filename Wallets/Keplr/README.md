@@ -4,8 +4,8 @@
 
 ## Summary  
 1. How to setup an account (Desktop)
-  - [Create your account (Desktop without Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr#Create-your-account-Desktop-without-Ledger)
-  - [Create your account (Desktop with Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr#Create-your-account-Desktop-with-Ledger)
+  - [Create your account (Desktop without Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account-Desktop-without-Ledger)
+  - [Create your account (Desktop with Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account-Desktop-with-Ledger)
 
 2. How to setup an account (Mobile)
   - [Create your account (Mobile without Ledger)](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#Create-your-account-Mobile-without-Ledger)
