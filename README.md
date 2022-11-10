@@ -4,7 +4,9 @@
    - Create your wallet
      - [Using Keplr](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/Keplr)
      - [Using Cosmostation](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/Cosmostation)
+     - [Using CLI](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/CLI)
      - [Using Ledger](https://github.com/StakeLab-Hub/Documentation/tree/main/Wallets/Ledger)
+     
 2. Get your first Cosmos native coins
    - Buy with a fiat onramp solution
      - [Using Kado](https://github.com/StakeLab-Hub/Documentation/tree/main/Onramp/Kado)
@@ -21,10 +23,12 @@
 
 3. StakeLab as a Hub
    - Delegate your Cosmos native coins with our Validators
-     - Using Keplr 
-     - Using Cosmostation
-     - Using Ledger
-     - Using CLI (Command Line Interface)
+     - [Using Keplr](https://github.com/StakeLab-Hub/Documentation/tree/main/Delegate/Keplr)
+     - [Using Ledger](https://github.com/StakeLab-Hub/Documentation/tree/main/Delegate/Ledger)
+     - [Using CLI](https://github.com/StakeLab-Hub/Documentation/tree/main/Delegate/CLI)
+   - Vote in on chain proposals as a Delegator
+     - [Using Keplr](https://github.com/StakeLab-Hub/Documentation/tree/main/Vote/Keplr)
+     - [Using CLI](https://github.com/StakeLab-Hub/Documentation/tree/main/Vote/CLI)
    - Find our developing tools
      - [Auto compound using Ledger and CLI (Command Line Interface)](https://github.com/StakeLab-Hub/Ledger_Authz_CLI)
      - [Our relayers channels and wallets for the Cosmos ecosystem](https://github.com/StakeLab-Hub/Relayers)
