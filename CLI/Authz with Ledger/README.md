@@ -1,4 +1,4 @@
-# Ledger_Authz_CLI  
+# Authz with Ledger 
 Through this guide you gonna learn how to enable auto compounding with StakeLab using CLI and the Authz module.  
 *Note that this is only for users managing their assets with a Ledger device.*  
 
