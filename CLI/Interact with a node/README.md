@@ -1,4 +1,4 @@
-# Interact with a node
+# Interact with a Cosmos node
 Through this guide you gonna learn how to interact with a Cosmos node, from basic query to some advanced features.  
 
 ## Summary
