@@ -84,6 +84,9 @@ URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmosh
 ```shell
 URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-pruned")|.url'`
 ```  
+Once you have your data folder loaded, you can change some files value in the config folder:  
+- **app.toml:** 
+- **config.toml:** 
 
 ### Launch the chain
 Once everything is setup on the configuration side, you can run using different way the Blockchain:  
