@@ -78,11 +78,11 @@ URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmosh
 ```  
 - **Full node:** the last 100 states are kept in addition to every 500th state; pruning at 10 block intervals (Average storage requirement - 2TB size)  
 ```shell
-URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-default")|.url'`
+URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-default")|.url'` && cd $HOME/.gaia && aria2c -x5 $URL
 ```  
 - **Pruned node:** determine with your own custom values (Low storage requirement - 50GB size)  
 ```shell
-URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-pruned")|.url'`
+URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-pruned")|.url'` && cd $HOME/.gaia && aria2c -x5 $URL
 ```  
 Once you have your data folder loaded, you can change some files value in the config folder:  
 - **app.toml:** 
