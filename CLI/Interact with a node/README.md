@@ -90,13 +90,13 @@ Once you have your data folder loaded, you can change some files value in the co
 
 ### Launch the chain
 Once everything is setup on the configuration side, you can run using different way the Blockchain:  
-- **CLI command (prefered to launch on a different screen)**  
+- **CLI command (prefered to launch on a different screen):**
 ```shell
 gaiad start
 ```  
 To stop the Blockchain, you just have to press ```CTRL```+```C```  
 
-- **Systemctl service**  
+- **Systemctl service:**
 Create the service file by copy/paste the below command:  
 ```shell
 tee <<EOF >/dev/null /etc/systemd/system/gaiad.service
@@ -130,7 +130,7 @@ To stop the Blockchain, you can run:
 systemctl stop gaiad
 ```  
 
-- **Cosmovisor (Recommended)**  
+- **Cosmovisor (Recommended):**
 Install Cosmovisor on your machine:  
 ```shell
 go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
