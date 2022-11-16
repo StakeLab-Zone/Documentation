@@ -90,15 +90,47 @@ Once you have your data folder loaded, you can change some files value in the co
 
 ### Launch the chain
 Once everything is setup on the configuration side, you can run using different way the Blockchain:  
-- CLI command (prefered to launch on a different screen)  
+- **CLI command (prefered to launch on a different screen)**  
 ```shell
 gaiad start
 ```  
-- Systemctl service  
-```shell
+To stop the Blockchain, you just have to press ```CTRL```+```C```  
 
+- **Systemctl service**  
+Create the service file by copy/paste the below command:  
+```shell
+tee <<EOF >/dev/null /etc/systemd/system/gaiad.service
+[Unit]
+Description=Teritori Cosmos daemon
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=/home/$USER/go/bin/gaiad start
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=4096
+
+[Install]
+WantedBy=multi-user.target
+EOF
 ```  
-- Cosmovisor  
+Once done, you just have to copy/past the three below commands to enable, load and launch your node:  
+```shell
+systemctl enable gaiad
+systemctl daemon-reload
+systemctl restart gaiad
+```  
+As it's running the back, you can check the log using:  
+```shell
+journalctl -u teritorid.service -f -n 100
+```  
+To stop the Blockchain, you can run:  
+```shell
+systemctl stop gaiad
+```  
+
+- **Cosmovisor (Recommended)**  
 ```shell
 
 ```  
