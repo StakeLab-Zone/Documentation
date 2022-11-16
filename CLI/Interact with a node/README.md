@@ -15,14 +15,15 @@ We could only see some delta if you are looking for an historic of all transacti
   - [Launch the chain](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Launch-the-chain)
   
 ### You can start here if you don't wanna run your own node
-3. Basic RPC feature
+3. Basic query using RPC (CLI)
   - [Query a balance](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-a-balance)
   - []()
-4. Advanced RPC feature
+4. Advanced query using RPC (CLI)
   - []() 
-5. Going deeper 
+5. Basic query using RPC (JavaScript)
   - []()
-
+6. Advanced query using RPC (Javascript)
+  - []()
 
 ## Prepare your machine
 ### Install the prerequies
@@ -104,8 +105,14 @@ gaiad status
 #Should return the following result if synched: "catching_up":false
 ```  
 
-## Basic CLI feature
+## Basic query using RPC (CLI)
 ### Query a balance
 
-## Advance CLI feature
+## Advanced query using RPC (CLI)
+### 
+
+## Basic query using RPC (JavaScript)
+### Query a balance
+
+## Advanced query using RPC (JavaScript)
 ### 
