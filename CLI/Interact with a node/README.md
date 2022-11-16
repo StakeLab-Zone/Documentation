@@ -49,7 +49,7 @@ echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.bash_profile &
 You can verify if it's well installed by using the following command:  
 ```shell
 go version
-# should return: go version go1.19.3 linux/amd64
+#Should return: go version go1.19.3 linux/amd64
 ```  
 
 ## Run your full node
@@ -61,16 +61,16 @@ git clone https://github.com/cosmos/gaia && cd gaia && git checkout v7.1.0 && ma
 You can verify if it's well installed by using the follow command:  
 ```shell
 gaiad version
-# should return: v7.1.0
+#Should return: v7.1.0
 ```  
 You can now init the chain to create the ```.gaia```folder that will have everything related to your Blockchain (data, config, keys...):  
 ```shell
 gaiad init <nameofyournode> --chain-id cosmoshub-4
 ```  
-Replace ```<nameofyournode>```by the name you want to have your node appears on the network if opened (public).  
+Replace ```<nameofyournode>```by the name you want to have your node appears on the network (public).  
 
 ### Configure your network files  
-Depending on your usage, you will either run one of three below nodes. We will use a ```snapshot``` to synch faster with the chain:   
+Depending on your usage, you will either choose to run one of the three below nodes. We will use a ```snapshot``` to synch faster with the chain:   
 - **Archive node:** all historic states will be saved, nothing will be deleted (High storage requirement - 4TB size)  
 ```shell
 URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-archive")|.url'` && cd $HOME/.gaia && aria2c -x5 $URL
@@ -84,9 +84,25 @@ URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmosh
 URL=`curl -L https://quicksync.io/cosmos.json|jq -r '.[] |select(.file=="cosmoshub-4-pruned")|.url'`
 ```  
 
-Depending of your usage, 
 ### Launch the chain
+Once everything is setup on the configuration side, you can run using different way the Blockchain:  
+- CLI command (prefered to launch on a different screen)  
+```shell
+gaiad start
+```  
+- Systemctl service  
+```shell
 
+```  
+- Cosmovisor  
+```shell
+
+```  
+You can verify if your chain is synched with the last block by using the below command:  
+```shell
+gaiad status
+#Should return the following result if synched: "catching_up":false
+```  
 
 ## Basic CLI feature
 ### Query a balance
