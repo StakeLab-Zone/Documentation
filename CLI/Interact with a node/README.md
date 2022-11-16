@@ -123,7 +123,7 @@ systemctl restart gaiad
 ```  
 As it's running the back, you can check the log using:  
 ```shell
-journalctl -u teritorid.service -f -n 100
+journalctl -u gaiad.service -f -n 100
 ```  
 To stop the Blockchain, you can run:  
 ```shell
@@ -148,7 +148,7 @@ mkdir -p $DAEMON_HOME/cosmovisor/upgrades
 ```  
 Copy the actual binary into Cosmovisor folder:  
 ```shell
-cp $HOME/go/bin/teritorid $DAEMON_HOME/cosmovisor/genesis/bin
+cp $HOME/go/bin/gaiad $DAEMON_HOME/cosmovisor/genesis/bin
 ```  
 Create the service file by copy/paste the below command:  
 ```shell
