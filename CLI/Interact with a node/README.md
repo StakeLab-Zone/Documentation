@@ -131,9 +131,64 @@ systemctl stop gaiad
 ```  
 
 - **Cosmovisor (Recommended)**  
+Install Cosmovisor on your machine:  
 ```shell
-
+go install github.com/cosmos/cosmos-sdk/cosmovisor/cmd/cosmovisor@latest
 ```  
+Source your profile with the daemon configuration:  
+```shell
+export DAEMON_NAME=gaiad
+export DAEMON_HOME=$HOME/.gaia
+source ~/.profile
+```  
+Create the folders to store future binaries for future upgrades:  
+```shell
+mkdir -p $DAEMON_HOME/cosmovisor/genesis/bin
+mkdir -p $DAEMON_HOME/cosmovisor/upgrades
+```  
+Copy the actual binary into Cosmovisor folder:  
+```shell
+cp $HOME/go/bin/teritorid $DAEMON_HOME/cosmovisor/genesis/bin
+```  
+Create the service file by copy/paste the below command:  
+```shell
+tee <<EOF >/dev/null /etc/systemd/system/gaiad.service
+[Unit]
+Description=Cosmos Daemon (cosmovisor)
+
+After=network-online.target
+
+[Service]
+User=$USER
+ExecStart=/home/$USER/go/bin/cosmovisor run start
+Restart=always
+RestartSec=3
+LimitNOFILE=4096
+Environment="DAEMON_NAME=gaiad"
+Environment="DAEMON_HOME=/home/$USER/.gaia"
+Environment="DAEMON_ALLOW_DOWNLOAD_BINARIES=false"
+Environment="DAEMON_RESTART_AFTER_UPGRADE=true"
+Environment="DAEMON_LOG_BUFFER_SIZE=512"
+
+[Install]
+WantedBy=multi-user.target
+EOF
+```  
+Once done, you just have to copy/past the three below commands to enable, load and launch your node:  
+```shell
+systemctl enable gaiad
+systemctl daemon-reload
+systemctl restart gaiad
+```  
+As it's running the back, you can check the log using:  
+```shell
+journalctl -u gaiad.service -f -n 100
+```  
+To stop the Blockchain, you can run:  
+```shell
+cosmovisor run stop
+```  
+
 You can verify if your chain is synched with the last block by using the below command:  
 ```shell
 gaiad status
