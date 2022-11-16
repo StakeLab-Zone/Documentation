@@ -4,7 +4,7 @@ Through this guide you gonna learn how to interact with a Cosmos node, from basi
 ## Summary
 ### Optionnal - Only if you wanna use your own endpoint in case of lot of queries
 1. Prepare your machine
-  - [Install the prerequies](https://github.com/StakeLab-Hub/Documentation/tree/main/CLI/Interact-with-a-node/README.md#Install-the-prerequies)
+  - [Install the prerequies](https://github.com/StakeLab-Hub/Documentation/tree/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies)
 2. Run your full node
   - [Install the binary]()
   - [Configure your network files]()
