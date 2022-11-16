@@ -1,4 +1,4 @@
-# Interact with a Cosmos RPC
+# Interact with a Cosmos RPC node
 Through this guide you gonna learn how to interact with a Cosmos node, from basic query to some advanced features using RPC.  
 
 ## Difference between Ethereum and Cosmos RPC's
