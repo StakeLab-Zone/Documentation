@@ -1,5 +1,10 @@
 # Interact with a Cosmos RPC node
 Through this guide you gonna learn how to interact with a Cosmos node, from basic query to some advanced features using RPC.  
+Remote procedure calls (RPCs) are frequently used in distributed computing and allow for inter-process communication (IPC). In most crypto ecosystem, there is public node (endpoint) existing, giving read/write access, that let you try for low amount of queries on it for free.  
+On Cosmos, here are the few endpoints to remember:  
+- **gRPC:** ```PORT:``` 9090
+- **RPC:** ```PORT:``` 26657
+- **Rest:** ```PORT:``` 1317
 
 ## Difference between Ethereum and Cosmos RPC's
 There is no major differenciation between both of them.  
