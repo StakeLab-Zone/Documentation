@@ -236,7 +236,7 @@ yarn add @cosmjs/proto-signing @cosmjs/stargate
 Once done, you should now be able to use a basic ```getBalance``` query to retrieve the balance of a determinated account:  
 ```shell
 const balance = getBalance(
-    "uatom",
+    "the denom of token with decimals included, generaly with a prefix "u" or "a". For Cosmos Hub, we will use: uatom",
     "the cosmos1 address you wanna query",
     "public endpoint or the one you created that should be on http://localhost:26657 by default"
  );
