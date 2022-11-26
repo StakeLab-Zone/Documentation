@@ -208,6 +208,31 @@ gaiad status
 
 ## Basic query using RPC (JavaScript)
 ### Query a balance
+To first start using JavaScript for your RPC queries, you will need to install CosmJS:  
+```shell
+npm install @cosmjs/proto-signing @cosmjs/stargate
+# or
+yarn add @cosmjs/proto-signing @cosmjs/stargate
+```  
 
+Once done, you should be able to use a basic ```getBalance``` query to retrieve the balance of a determinated account:  
+```shell
+const balance = getBalance(
+    "uatom",
+    "the cosmos1 address you wanna query",
+    "public endpoint or the one you created that should be on http://localhost:26657 by default"
+ );
+ ```  
+ 
+See the below example format:  
+
+```shell
+const balance = getBalance(
+    "uatom",
+    "cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll",
+    "https://cosmos-mainnet-rpc.allthatnode.com:26657/"
+ );
+ ```  
+ 
 ## Advanced query using RPC (JavaScript)
 ### 
