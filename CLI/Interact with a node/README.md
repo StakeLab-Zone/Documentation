@@ -21,12 +21,12 @@ We could only see some delta if you are looking for an historic of all transacti
   
 ### You can start here if you don't wanna run your own node
 3. Basic query using RPC (CLI)
-  - [Query a balance](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-a-balance)
+  - [Query a balance](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-a-balance-CLI)
   - []()
 4. Advanced query using RPC (CLI)
   - []() 
 5. Basic query using RPC (JavaScript)
-  - []()
+  - [Query a balance](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-a-balance-JavaScript)
 6. Advanced query using RPC (Javascript)
   - []()
 
@@ -201,7 +201,7 @@ gaiad status
 ```  
 
 ## Basic query using RPC (CLI)
-### Query a balance
+### Query a balance (CLI)
 To first start using CLI for your RPC queries, you will need to install the binary of the chain you wanna use, here for Cosmos Hub: ```gaiad```:  
 - If you followed the optionnal part and you are running your full node, you shoud already have ```gaiad```installed properly and can moove to the next step.  
 - If you don't, please refer to the [part I](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies) and [part II](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-binary) to install both prerequies and binary.  
@@ -225,7 +225,7 @@ gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node h
 ### 
 
 ## Basic query using RPC (JavaScript)
-### Query a balance
+### Query a balance (JavaScript)
 To first start using JavaScript for your RPC queries, you will need to install CosmJS:  
 ```shell
 npm install @cosmjs/proto-signing @cosmjs/stargate
