@@ -202,7 +202,25 @@ gaiad status
 
 ## Basic query using RPC (CLI)
 ### Query a balance
+To first start using CLI for your RPC queries, you will need to install the binary of the chain you wanna use, here for Cosmos Hub: ```gaiad```:  
+- If you followed the optionnal part and you are running your full node, you shoud already have ```gaiad```installed properly and can moove to the next step.  
+- If you don't, please refer to the [part I](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies) and [part II](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-binary) to install both prerequies and binary.  
 
+You should now be able to use a basic ```bank balances```query to retrieve the balance of a determinated account:  
+```shell
+gaiad query bank balances <cosmos1address> --node tcp://ip:port
+ ```  
+ 
+See the below example format:  
+
+```shell
+# If you use your own full node
+gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node tcp://localhost:26657
+
+# If you use a public endpoint
+gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node https://cosmos-mainnet-rpc.allthatnode.com:26657/
+ ```  
+ 
 ## Advanced query using RPC (CLI)
 ### 
 
@@ -215,7 +233,7 @@ npm install @cosmjs/proto-signing @cosmjs/stargate
 yarn add @cosmjs/proto-signing @cosmjs/stargate
 ```  
 
-Once done, you should be able to use a basic ```getBalance``` query to retrieve the balance of a determinated account:  
+Once done, you should now be able to use a basic ```getBalance``` query to retrieve the balance of a determinated account:  
 ```shell
 const balance = getBalance(
     "uatom",
