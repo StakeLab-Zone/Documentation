@@ -20,15 +20,21 @@ We could only see some delta if you are looking for an historic of all transacti
   - [Launch the chain](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Launch-the-chain)
   
 ### You can start here if you don't wanna run your own node
-3. Basic query using RPC (CLI)
-  - [Query a balance](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-a-balance-CLI)
-  - []()
-4. Advanced query using RPC (CLI)
-  - []() 
-5. Basic query using RPC (JavaScript)
-  - [Query a balance](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-a-balance-JavaScript)
-6. Advanced query using RPC (Javascript)
-  - []()
+3. Query using RPC (CLI)
+  - [Query the current status](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-current-status-CLI)
+  - [Query the current block height](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-current-block-height-CLI)
+  - [Query the balance of an account](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-balance-of-an-account-CLI)
+  - [Send a transaction](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Send-a-transaction-CLI)
+5. Query using RPC (CosmJS)
+  - [Query the current status](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-current-status-CosmJS)
+  - [Query the current block height](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-current-block-height-CosmJS)
+  - [Query the balance of an account](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-balance-of-an-account-CosmJS)
+  - [Send a transaction](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Send-a-transaction-CosmJS)
+6. Query using RPC (JSON-RPC)
+  - [Query the current status](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-current-status-JSON-RPC)
+  - [Query the current block height](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-current-block-height-JSON-RPC)
+  - [Query the balance of an account](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Query-the-balance-of-an-account-JSON-RPC)
+  - [Send a transaction](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Send-a-transaction-JSON-RPC)
 
 ## Prepare your machine
 ### Install the prerequies
@@ -200,19 +206,49 @@ gaiad status
 #Should return the following result if synched: "catching_up":false
 ```  
 
-## Basic query using RPC (CLI)
-### Query a balance (CLI)
-To first start using CLI for your RPC queries, you will need to install the binary of the chain you wanna use, here for Cosmos Hub: ```gaiad```:  
+## Query using RPC (CLI)
+### Query the current status (CLI)  
+To use the RPC (Remote Procedure Call) feature with the Gaia binary from the Cosmos Hub, you will need to install the binary of the chain you wanna use, here for Cosmos Hub: ```gaiad```:  
 - If you followed the optionnal part and you are running your full node, you shoud already have ```gaiad```installed properly and can moove to the next step.  
 - If you don't, please refer to the [part I](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies) and [part II](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-binary) to install both prerequies and binary.  
-
-You should now be able to use a basic ```bank balances```query to retrieve the balance of a determinated account:  
+To query the current status of the blockchain, you can use the ```status``` command, like this:  
 ```shell
-gaiad query bank balances <cosmos1address> --node tcp://ip:port
+gaiad query status --node tcp://ip:port
+```  
+
+See the below example format:  
+```shell
+# If you use your own full node
+gaiad query status --node tcp://localhost:26657
+
+# If you use a public endpoint
+gaiad query status --node https://cosmos-mainnet-rpc.allthatnode.com:26657/
+ ```  
+This will send a status RPC request to the server, which will return the current status of the blockchain. 
+
+### Query the current block height (CLI)  
+To query the current block height of the blockchain, you can use the ```block``` query command, like this:  
+```shell
+gaiad query block <HEIGHT> --node tcp://ip:port
+```  
+
+See the below example format:  
+```shell
+# If you use your own full node
+gaiad query block 13069963 --node tcp://localhost:26657
+
+# If you use a public endpoint
+gaiad query block 13069963 --node https://cosmos-mainnet-rpc.allthatnode.com:26657/
+ ```  
+Replace ```<HEIGHT>``` with the block of the blockchain you want to query. This will return the current block height of the blockchain, along with other information about the block, such as the timestamp and the list of transactions included in the block.  
+
+### Query the balance of an account (CLI)
+To query the balance of an account on the blockchain, you can use the ```bank balances``` query account command, like this:
+```shell
+gaiad query bank balances <ADDRESS> --node tcp://ip:port
  ```  
  
 See the below example format:  
-
 ```shell
 # If you use your own full node
 gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node tcp://localhost:26657
@@ -220,13 +256,25 @@ gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node t
 # If you use a public endpoint
 gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node https://cosmos-mainnet-rpc.allthatnode.com:26657/
  ```  
- 
-## Advanced query using RPC (CLI)
-### 
+Replace ```<ADDRESS>``` with the address of the account you want to query. This will return the current balance of the account, along with other information about the account, such as the sequence number and the list of account tokens.  
 
+### Send a transaction (CLI)  
+To send a transaction on the blockchain, you can use the ```tx bank send``` command, like this:  
+```shell
+gaiad tx bank send <SENDER_KEY> <RECIPIENT_ADDRESS> <AMOUNT> --chain-id=cosmoshub-4 --node tcp://ip:port
+```  
+See the below example format:  
+```shell
+# If you use your own full node
+gaiad tx bank send cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll cosmos1nm50zycnm9yf33rv8n6lpks24usxzahkhyfj88 1000000uatom --chain-id=cosmoshub-4 --node tcp://localhost:26657
 
-## Query using RPC (JavaScript)
-### Query a balance (JavaScript)
+# If you use a public endpoint
+gaiad tx bank send myprivatecosmoskey cosmos1nm50zycnm9yf33rv8n6lpks24usxzahkhyfj88 1000000uatom --chain-id=cosmoshub-4 --node https://cosmos-mainnet-rpc.allthatnode.com:26657/
+```   
+Replace ```<SENDER_KEY>``` with the private key of the sender, ```<RECIPIENT_ADDRESS>``` with the address of the recipient, ```<AMOUNT>``` with the amount of tokens to send (not thate it's using all the decimal and ```u``` or ```a```before the denom - here 1000000uatom = 1 ATOM). This will broadcast the transaction to the network and return the result of the transaction, such as whether it was successful or not.  
+
+## Query using RPC (CosmJS)
+### Query the current status (CosmJS)  
 To use the RPC (Remote Procedure Call) feature with CosmJS from the Cosmos Hub, you first need to install CosmJS by running the following command:  
 ```shell
 npm install -g @cosmjs/cosmjs
@@ -237,40 +285,43 @@ cosmjs --network <NETWORK> <COMMAND>
 ```  
 Replace ```<NETWORK>``` with the ID of the network you want to use (e.g. cosmoshub-4), and ```<COMMAND>``` with the CosmJS command you want to run.  
 
-Here are some examples of how to use the cosmjs tool to send RPC requests to the Cosmos Hub:  
+```shell
+cosmjs query status --network cosmoshub-4
+```  
+This will send a status RPC request to the server, which will return the current status of the blockchain.  
 
-### Query the current block height   
+### Query the current block height (CosmJS)   
 To query the current block height of the blockchain, you can use the cosmjs query block command, like this:
 ```shell
 cosmjs query block --network cosmoshub-4
 ```  
 This will return the current block height of the blockchain, along with other information about the block, such as the timestamp and the list of transactions included in the block.  
 
-### Query the balance of an account  
+### Query the balance of an account (CosmJS)  
 To query the balance of an account on the blockchain, you can use the cosmjs query account command, like this:
 ```shell
 cosmjs query account <ADDRESS> --network cosmoshub-4
 ```  
 Replace ```<ADDRESS>``` with the address of the account you want to query. This will return the current balance of the account, along with other information about the account, such as the sequence number and the list of account tokens.  
 
-### Send a transaction  
+### Send a transaction (CosmJS)  
 To send a transaction on the blockchain, you can use the cosmjs tx send command, like this:  
 
 ```shell
-cosmjs tx send <SENDER_KEY> <RECIPIENT_ADDRESS> <AMOUNT> --chain-id=<CHAIN_ID>
+cosmjs tx send <SENDER_KEY> <RECIPIENT_ADDRESS> <AMOUNT> --chain-id=cosmoshub-4
 ```  
-Replace ```<SENDER_KEY>``` with the private key of the sender, ```<RECIPIENT_ADDRESS>``` with the address of the recipient, ```<AMOUNT>``` with the amount of tokens to send, and ```<CHAIN_ID>``` with the ID of the blockchain (e.g. cosmoshub-4). This will broadcast the transaction to the network and return the result of the transaction, such as whether it was successful or not.  
+Replace ```<SENDER_KEY>``` with the private key of the sender, ```<RECIPIENT_ADDRESS>``` with the address of the recipient, ```<AMOUNT>``` with the amount of tokens to send. This will broadcast the transaction to the network and return the result of the transaction, such as whether it was successful or not.  
 
 ## Query using RPC (JSON-RPC)
-### Query the current status  
-To use the RPC (Remote Procedure Call) feature with the Gaia binary from the Cosmos Hub, you need to first start the Gaia server following [this procedure](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies), or use a public endpoint.
-
+### Query the current status (JSON-RPC)  
+To use the RPC (Remote Procedure Call) feature with the Gaia binary from the Cosmos Hub, you need to first start the Gaia server following [this procedure](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies), or use a public endpoint.  
+Once the Gaia server is running, you can use any JSON-RPC compatible client to send requests to the server. For example, you can use the curl command-line tool to send an RPC request to the server, like this:  
 ```shell
 curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"status","params":[],"id":1}'
 ```  
 This will send a status RPC request to the server, which will return the current status of the blockchain.  
 
-### Query the current block height  
+### Query the current block height (JSON-RPC)  
 To query the current block height of the blockchain, you can use the block RPC endpoint, like this:  
 
 ```shell
@@ -278,7 +329,7 @@ curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"block","param
 ```  
 This will return the current block height of the blockchain, along with other information about the block, such as the timestamp and the list of transactions included in the block.  
 
-### Query the balance of an account  
+### Query the balance of an account (JSON-RPC)  
 To query the balance of an account on the blockchain, you can use the account RPC endpoint, like this:  
 
 ```shell
@@ -286,7 +337,7 @@ curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"account","par
 ```  
 Replace ```<ADDRESS>``` with the address of the account you want to query. This will return the current balance of the account, along with other information about the account, such as the sequence number and the list of account tokens.  
 
-### Send a transaction  
+### Send a transaction (JSON-RPC)  
 To send a transaction on the blockchain, you can use the broadcast_tx_sync RPC endpoint, like this:  
 
 ```shell
