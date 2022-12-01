@@ -259,33 +259,34 @@ const balance = getBalance(
 
 
 ## Basic query using RPC (JSON-RPC)
+### Query the current status  
 Once the Gaia server is running, you can use any JSON-RPC compatible client to send requests to the server. For example, you can use the curl command-line tool to send an RPC request to the server, like this:  
 
 ```shell
 curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"status","params":[],"id":1}'
-This will send a status RPC request to the server, which will return the current status of the blockchain.
 ```  
+This will send a status RPC request to the server, which will return the current status of the blockchain.  
 
-Query the current block height  
+### Query the current block height  
 To query the current block height of the blockchain, you can use the block RPC endpoint, like this:  
 
 ```shell
 curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"block","params":[],"id":1}'
-This will return the current block height of the blockchain, along with other information about the block, such as the timestamp and the list of transactions included in the block.
 ```  
+This will return the current block height of the blockchain, along with other information about the block, such as the timestamp and the list of transactions included in the block.  
 
-Query the balance of an account  
+### Query the balance of an account  
 To query the balance of an account on the blockchain, you can use the account RPC endpoint, like this:  
 
 ```shell
 curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"account","params":[{"address":"<ADDRESS>"}],"id":1}'
-Replace <ADDRESS> with the address of the account you want to query. This will return the current balance of the account, along with other information about the account, such as the sequence number and the list of account tokens.
-```
+```  
+Replace ```<ADDRESS>``` with the address of the account you want to query. This will return the current balance of the account, along with other information about the account, such as the sequence number and the list of account tokens.  
 
-Send a transaction  
+### Send a transaction  
 To send a transaction on the blockchain, you can use the broadcast_tx_sync RPC endpoint, like this:  
 
 ```shell
 curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"broadcast_tx_sync","params":[{"tx": "<TRANSACTION>"}],"id":1}'
-Replace <TRANSACTION> with the transaction you want to send, encoded in the appropriate format (e.g. Amino or JSON). This will broadcast the transaction to the network and return the result of the transaction, such as whether it was successful or not.
 ```  
+Replace ```<TRANSACTION>``` with the transaction you want to send, encoded in the appropriate format (e.g. Amino or JSON). This will broadcast the transaction to the network and return the result of the transaction, such as whether it was successful or not.
