@@ -225,42 +225,45 @@ gaiad query bank balances cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll --node h
 ### 
 
 
-## Basic query using RPC (JavaScript)
+## Query using RPC (JavaScript)
 ### Query a balance (JavaScript)
-To first start using JavaScript for your RPC queries, you will need to install CosmJS:  
+To use the RPC (Remote Procedure Call) feature with CosmJS from the Cosmos Hub, you first need to install CosmJS by running the following command:  
 ```shell
-npm install @cosmjs/proto-signing @cosmjs/stargate
-# or
-yarn add @cosmjs/proto-signing @cosmjs/stargate
+npm install -g @cosmjs/cosmjs
 ```  
-
-Once done, you should now be able to use a basic ```getBalance``` query to retrieve the balance of a determinated account:  
+Once CosmJS is installed, you can use the cosmjs command-line tool to send RPC requests to the Cosmos Hub. The cosmjs tool uses the gaia-13002 network by default, but you can specify a different network by using the --network flag, like this:
 ```shell
-const balance = getBalance(
-    "the denom of token with decimals included, generaly with a prefix "u" or "a". For Cosmos Hub, we will use: uatom",
-    "the cosmos1 address you wanna query",
-    "public endpoint or the one you created that should be on http://localhost:26657 by default"
- );
- ```  
- 
-See the below example format:  
+cosmjs --network <NETWORK> <COMMAND>
+```  
+Replace ```<NETWORK>``` with the ID of the network you want to use (e.g. cosmoshub-4), and ```<COMMAND>``` with the CosmJS command you want to run.  
+
+Here are some examples of how to use the cosmjs tool to send RPC requests to the Cosmos Hub:  
+
+### Query the current block height   
+To query the current block height of the blockchain, you can use the cosmjs query block command, like this:
+```shell
+cosmjs query block --network cosmoshub-4
+```  
+This will return the current block height of the blockchain, along with other information about the block, such as the timestamp and the list of transactions included in the block.  
+
+### Query the balance of an account  
+To query the balance of an account on the blockchain, you can use the cosmjs query account command, like this:
+```shell
+cosmjs query account <ADDRESS> --network cosmoshub-4
+```  
+Replace ```<ADDRESS>``` with the address of the account you want to query. This will return the current balance of the account, along with other information about the account, such as the sequence number and the list of account tokens.  
+
+### Send a transaction  
+To send a transaction on the blockchain, you can use the cosmjs tx send command, like this:  
 
 ```shell
-const balance = getBalance(
-    "uatom",
-    "cosmos1gpx52r9h3zeul45amvcy2pysgvcwddxrdjwdll",
-    "https://cosmos-mainnet-rpc.allthatnode.com:26657/"
- );
- ```  
- 
-## Advanced query using RPC (JavaScript)
-### 
+cosmjs tx send <SENDER_KEY> <RECIPIENT_ADDRESS> <AMOUNT> --chain-id=<CHAIN_ID>
+```  
+Replace ```<SENDER_KEY>``` with the private key of the sender, ```<RECIPIENT_ADDRESS>``` with the address of the recipient, ```<AMOUNT>``` with the amount of tokens to send, and ```<CHAIN_ID>``` with the ID of the blockchain (e.g. cosmoshub-4). This will broadcast the transaction to the network and return the result of the transaction, such as whether it was successful or not.  
 
-
-
-## Basic query using RPC (JSON-RPC)
+## Query using RPC (JSON-RPC)
 ### Query the current status  
-Once the Gaia server is running, you can use any JSON-RPC compatible client to send requests to the server. For example, you can use the curl command-line tool to send an RPC request to the server, like this:  
+To use the RPC (Remote Procedure Call) feature with the Gaia binary from the Cosmos Hub, you need to first start the Gaia server following [this procedure](https://github.com/StakeLab-Hub/Documentation/blob/main/CLI/Interact%20with%20a%20node/README.md#Install-the-prerequies), or use a public endpoint.
 
 ```shell
 curl -X POST http://localhost:26657 -d '{"jsonrpc":"2.0","method":"status","params":[],"id":1}'
