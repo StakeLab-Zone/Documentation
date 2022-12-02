@@ -10,7 +10,8 @@
   - [Buy $ATOM (Mobile)](https://github.com/StakeLab-Hub/Documentation/blob/main/CEX/Binance/README.md#Buy-ATOM-Mobile)  
   - [Withdraw your $ATOM to your address (Mobile)](https://github.com/StakeLab-Hub/Documentation/blob/main/CEX/Binance/README.md#Withdraw-your-ATOM-to-your-address-Mobile)  
 
-## Create an account (Desktop)  
+## Desktop  
+### Create an account (Desktop)  
 To setup an account on the Binance desktop application, follow these steps:  
 
 1. Go to the Binance website and click on the "Download" button in the top right corner. This will download the Binance desktop application.  
@@ -27,12 +28,13 @@ Once your account is set up and verified, you can deposit funds into it using a 
 Once you have funds in your account, you can buy $ATOM by going to the Binance exchange and searching for the $ATOM/BTC trading pair. Once you have found it, you can place an order to buy $ATOM at the current market price, or you can create a limit order to buy $ATOM at a specific price that you set.  
 It is not possible to directly buy $ATOM with fiat currency (such as US dollars or Euros). You will need to first buy a cryptocurrency that is supported by Binance (such as Bitcoin or Ethereum) and then use that cryptocurrency to buy $ATOM.  
 
-## Withdraw your $ATOM to your address (Desktop)  
+### Withdraw your $ATOM to your address (Desktop)  
 To withdraw your $ATOM from Binance, you will first need to go to the "Funds" tab in the top menu. From there, select the "Withdrawals" option and choose the $ATOM coin from the list of available cryptocurrencies.  
 Next, you will need to enter the wallet address where you want to send your $ATOM. Make sure to double-check the address to ensure that it is correct, as sending $ATOM to the wrong address can result in the loss of your funds.  
 Once you have entered the wallet address and confirmed the details of your withdrawal, submit the withdrawal request. Binance will process the withdrawal and send your $ATOM to the specified wallet address. The time it takes for the $ATOM to arrive in your wallet will depend on the network congestion and the transaction fees you have set.  
 
-## Create an account (Mobile)  
+## Mobile  
+### Create an account (Mobile)  
 To setup an account on the Binance mobile application, follow these steps:  
 
 1. Open the App Store or Google Play Store on your mobile device and search for the Binance app.  
@@ -44,7 +46,7 @@ To setup an account on the Binance mobile application, follow these steps:
 7. Click on the "Create Account" button to complete the process.  
 Once your account has been created, you can log in to the Binance mobile app using your email address and password. From there, you will be able to buy your first $ATOM to join the Cosmos ecosystem!  
 
-## Buy $ATOM (Mobile)  
+### Buy $ATOM (Mobile)  
 
 
-## Withdraw your $ATOM to your address (Mobile)  
+### Withdraw your $ATOM to your address (Mobile)  
