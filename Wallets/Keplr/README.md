@@ -15,7 +15,8 @@ On this complete documentation, you will retrieve all of them in a one page!
 
 3. Receive your first assets
   - [Using Kado](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Kado/README.md)
-  - [Using Binance](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Binance/README.md)
+  - [Using Moonpay](https://github.com/StakeLab-Hub/Documentation/blob/main/Onramp/Moonpay/README.md)
+  - [Using Binance](https://github.com/StakeLab-Hub/Documentation/blob/main/CEX/Binance/README.md)
   
 4. Basics features
   - [Send/Receive](https://github.com/StakeLab-Hub/Documentation/blob/main/Wallets/Keplr/README.md#SendReceive)
