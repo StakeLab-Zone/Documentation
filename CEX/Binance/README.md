@@ -47,6 +47,16 @@ To setup an account on the Binance mobile application, follow these steps:
 Once your account has been created, you can log in to the Binance mobile app using your email address and password. From there, you will be able to buy your first $ATOM to join the Cosmos ecosystem!  
 
 ### Buy $ATOM (Mobile)  
-
+Once your account is set up and verified, you can deposit funds into it using a supported payment method. To do this, tap on the "Funds" tab and then select "Deposits." Choose the currency you want to deposit, such as Bitcoin or Ethereum, and then follow the on-screen instructions to complete the deposit.  
+Once your account is funded, go back to the main screen and tap on the "Exchange" tab.  
+In the search bar at the top, type in "ATOM" and select it from the list of options.  
+You should now see the ATOM/BTC (or ATOM/ETH) trading pair on your screen. Select this trading pair.  
+On the trading page, enter the amount of ATOM you want to buy and the price you want to pay for each ATOM in the appropriate fields. Then, review the details of your order to make sure everything is correct, and tap on the "Buy ATOM" button to place your order.  
+Once your order is filled, you will see the ATOM coins in your Binance wallet. You can view your wallet by tapping on the "Funds" tab and then selecting "Balances."  
 
 ### Withdraw your $ATOM to your address (Mobile)  
+To withdraw your $ATOM from Binance, you will first need to go to the "Funds" tab and then select "Withdrawals."  
+In the search bar, type in "ATOM" and select it from the list of options.  
+Enter the amount of ATOM you want to withdraw and the address you want to send it to in the appropriate fields. Double-check the details of your withdrawal to make sure everything is correct, and then tap on the "Submit" button to initiate the withdrawal.  
+You may be asked to confirm the withdrawal through email or SMS. Follow the on-screen instructions to complete the confirmation process.  
+Once your withdrawal is processed, the ATOM coins will be sent to the address you specified. This can take some time, so please be patient. You can check the status of your withdrawal by going to the "History" tab and looking for the withdrawal transaction.  
