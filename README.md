@@ -29,6 +29,8 @@
      - [Using Keplr](https://github.com/StakeLab-Hub/Documentation/tree/main/Vote/Keplr)
      - [Using CLI](https://github.com/StakeLab-Hub/Documentation/tree/main/Vote/CLI)
    - Find our developing tools
-     - [Auto compound using Ledger and CLI (Command Line Interface)](https://github.com/StakeLab-Hub/StakeLab/blob/main/Ledger_Authz_CLI/README.md)
      - [Our relayers channels and wallets for the Cosmos ecosystem](https://github.com/StakeLab-Hub/StakeLab/blob/main/Relayers/README.md)
      - [Our restake wallets for the Cosmos ecosystem](https://github.com/StakeLab-Hub/StakeLab/blob/main/Restakek/README.md)
+     - [Auto compound using Ledger and CLI (Command Line Interface)](https://github.com/StakeLab-Hub/StakeLab/blob/main/Restake/Authz%20with%20Ledger/README.md)
+     - [Our public endpoints for new developers](https://github.com/StakeLab-Hub/StakeLab/blob/main/Public%20endpoints/README.md)
+     - [How to interact with a cosmos endpoint](https://github.com/StakeLab-Hub/StakeLab/blob/main/Interact%20with%20a%20node/README.md)
